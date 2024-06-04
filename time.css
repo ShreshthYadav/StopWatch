@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Teko:wght@300..700&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    background-color: #000;
+    margin: 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.stopwatch, .laps-container {
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.stopwatch {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60%;
+    
+    border-right: 1px solid #ddd;
+    text-align: center;
+}
+
+.display {
+    font-size: 90px;
+    margin-bottom: 10px;
+    position: relative;
+    top: 40%;
+    color: chocolate;
+    white-space: nowrap;
+}
+
+.controls {
+    position: fixed;
+    bottom: 20px;
+    left: 30%;
+    transform: translateX(-50%);
+    top:65%;
+}
+
+.controls button {
+    margin: 5px;
+    padding: 10px 50px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+.start{
+    border-radius: 4px;
+    background-color: green;
+    color: white;
+}
+
+.reset{
+    background-color: rgb(255, 217, 0);
+    color: black;
+}
+
+.laps-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40%;
+    text-align: center;
+    color: chocolate;
+}
+
+.laps-container h2 {
+    font-size: 25px;
+    color: chocolate;
+}
+
+.laps {
+    color: white;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.laps li {
+    font-size: 30px;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid chocolate;
+    border-radius: 4px;
+}
